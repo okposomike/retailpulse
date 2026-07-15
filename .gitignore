@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+
+.env
+
+.airflow/
+
+data/bronze/
+data/silver/
+data/gold/
+
+.vscode/
