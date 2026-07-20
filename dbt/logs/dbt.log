@@ -1,0 +1,67 @@
+[0m20:14:47.308024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002252C073E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002252F535370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002252F537E30>]}
+
+
+============================== 20:14:47.323643 | 01128e39-972e-4872-8231-31c7f564d7c0 ==============================
+[0m20:14:47.323643 [info ] [MainThread]: Running with dbt=1.11.12
+[0m20:14:47.323643 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init retailpulse_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:14:47.427140 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\user\.dbt
+[0m20:14:47.443167 [debug] [MainThread]: Starter project path: C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\dbt\include\starter_project
+[0m20:14:47.636652 [info ] [MainThread]: 
+Your new dbt project "retailpulse_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:14:47.644754 [info ] [MainThread]: Setting up your profile.
+[0m20:17:30.492566 [error] [MainThread]: Encountered an error:
+
+[0m20:17:30.702760 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\dbt\cli\main.py", line 488, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\click\termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\OneDrive\Desktop\retailpulse\venv\Lib\site-packages\click\termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:17:30.702760 [debug] [MainThread]: Command `dbt init` failed at 20:17:30.702760 after 163.91 seconds
+[0m20:17:30.702760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002252FE73890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002252FE52090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022530F0E390>]}
+[0m20:17:30.702760 [debug] [MainThread]: Flushing usage events
+[0m20:17:33.313578 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:26:05.208816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD329BFBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD31A419A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD31A402F0>]}
+
+
+============================== 20:26:05.242765 | f672713e-2c36-48d2-b1c3-f0db3878d2ca ==============================
+[0m20:26:05.242765 [info ] [MainThread]: Running with dbt=1.11.12
+[0m20:26:05.242765 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'invocation_command': 'dbt init retailpulse_dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:26:05.356339 [info ] [MainThread]: A project called retailpulse_dbt already exists here.
+[0m20:26:05.371961 [debug] [MainThread]: Command `dbt init` succeeded at 20:26:05.371961 after 0.73 seconds
+[0m20:26:05.371961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD321E91F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD31941B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD324ED220>]}
+[0m20:26:05.371961 [debug] [MainThread]: Flushing usage events
+[0m20:26:08.735301 [debug] [MainThread]: An error was encountered while trying to flush usage events
