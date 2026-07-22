@@ -1,8 +1,6 @@
-select
+SELECT
     order_date,
-    sum(total_revenue) as revenue,
-    count(*) as total_orders
-
-from customers.gold.sales_summary
-
-group by order_date
+    SUM(total_revenue) AS daily_revenue,
+    SUM(total_orders) AS daily_orders
+FROM {{ source('gold', 'sales_summary') }}
+GROUP BY order_date

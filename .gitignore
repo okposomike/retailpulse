@@ -11,3 +11,5 @@ data/silver/
 data/gold/
 
 .vscode/
+
+**/profiles.yml
