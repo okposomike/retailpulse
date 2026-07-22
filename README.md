@@ -206,6 +206,11 @@ Executive-level business summary model.
 * unique
 * model validation
 
+# DBT Lineage
+
+<img width="1313" height="563" alt="Screenshot 2026-07-22 115055" src="https://github.com/user-attachments/assets/ca20cdf6-5cf5-4210-808c-9d8baa08c87e" />
+
+
 ---
 
 # Power BI Dashboard
