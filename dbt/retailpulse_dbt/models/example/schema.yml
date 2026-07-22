@@ -1,0 +1,75 @@
+version: 2
+
+models:
+  - name: sales_metrics
+    description: Daily sales metrics
+
+    columns:
+      - name: daily_revenue
+
+        tests:
+          - not_null
+    
+
+  - name: customer_metrics
+    description: Customer spending and order behavior
+
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+      - name: total_orders
+        tests:
+          - not_null
+
+      - name: total_spent
+        tests:
+          - not_null
+
+  - name: product_metrics
+    description: Product performance metrics
+
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+      - name: total_units_sold
+        tests:
+          - not_null
+
+      - name: total_revenue
+        tests:
+          - not_null
+
+  - name: executive_dashboard
+    description: Executive-level business KPIs
+
+    columns:
+      - name: total_customers
+        tests:
+          - not_null
+
+      - name: total_orders
+        tests:
+          - not_null
+
+      - name: total_revenue
+        tests:
+          - not_null
+
+  - name: customer_profile
+    description: Customer segmentation model
+
+    columns:
+    - name: customer_id
+      tests:
+        - not_null
+        - unique
+
+    - name: customer_segment
+      tests:
+        - not_null

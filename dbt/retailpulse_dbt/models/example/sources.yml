@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: gold
+    catalog: customers
+    schema: gold
+
+    tables:
+      - name: sales_summary
+      - name: customer_summary
+      - name: product_performance
