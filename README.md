@@ -59,6 +59,14 @@ Lineage
 Power BI Dashboard
 ```
 
+
+
+
+<img width="815" height="371" alt="architecture_diagram" src="https://github.com/user-attachments/assets/df8cde74-e315-48ac-8b7a-b51d1014b4ad" />
+
+
+
+
 ---
 
 ## Technology Stack
@@ -333,11 +341,10 @@ Planned improvements for future versions include:
 
 # Dashboard Preview
 
-Add dashboard screenshots here.
 
-```markdown
-![RetailPulse Dashboard](screenshots/powerbi_dashboard.png)
-```
+
+<img width="1013" height="586" alt="Screenshot 2026-07-22 122317" src="https://github.com/user-attachments/assets/c88dfab1-6e2b-4a32-b60a-edef1d6107dd" />
+
 
 ---
 
@@ -345,10 +352,8 @@ Add dashboard screenshots here.
 
 ### Michael Okposo
 
-Data Analyst | Data Engineer | Pharmacist
+Data Analyst | Data Engineer | Doctor of Pharmacy
 
 Building scalable data platforms, analytics solutions, and business intelligence systems using modern cloud and data engineering technologies.
-
-GitHub: https://github.com/okposomike
 
 LinkedIn: http://linkedin.com/in/okposo-michael-b0b99224a
